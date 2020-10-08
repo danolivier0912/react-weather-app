@@ -1,0 +1,57 @@
+.App {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/weather.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.weather-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather-container .name-and-city {
+    text-align: center;
+}
+
+.weather-container .name-and-city .weather-city {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.weather-container .name-and-city .weather-date {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.weather-container .weather-temperatures {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.weather-container .weather-temperature {
+    font-size: 50px;
+}
+
+.weather-container .weather-temperature:not(.main-temperature) {
+    opacity: 0.5;
+}
+
+.weather-container .weather-temperature.main-temperature {
+    margin: 0 40px;
+}
+
+.weather-container .weather-temperatures span {
+    display: block;
+    font-size: 20px;
+}
